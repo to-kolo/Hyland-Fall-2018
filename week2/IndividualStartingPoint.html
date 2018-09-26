@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <script>
+            function alertClick() {
+                alert("This is a message")
+            }
+            function promptClick() {
+               var yourMessage = prompt("What do you want to see?")
+               alert("Here is your message: " + yourMessage)
+            }
+            function askClick() {
+                var answer = prompt("Do you want to see the message? (Answer must be in lowercase)")
+                if (answer === "yes") {
+                    alert("Dab on them haters!");
+                } else if (answer === "no")
+                return;
+            }
+            function checkboxClick(simpleCheckbox) {
+                if(simpleCheckbox.checked = true){
+                     
+                }
+            }
+        </script>    
+        <style>
+            a {
+                font-size: 20px;
+            }
+
+            p#first {
+                font-weight: bold;
+            }
+
+            p.other {
+                font-style: italic;
+                color: blue;
+                cursor: crosshair;
+            }
+
+            button:hover {
+                color: forestgreen;
+            }
+
+            body {
+                background: url("https://wallpapercave.com/wp/tmx6W6N.png");
+            }
+        </style>
+        <script>
+            
+        </script>
+    </head>
+    <body>
+        <h1>My webpage</h1>
+        <p id="first">This is my webpage. It's a webpage and it's mine.</p>
+        <p class="other">Here is another paragraph as well. It's another one.</p>
+        <p class="other">Here is another paragraph as well. It's another one.</p>
+        <p class="other">Here is another paragraph as well. It's another one.</p>
+        <a href="https://google.com/">Google</a>
+        <p><input id="simpleCheckbox" type="checkbox"></p>
+        <p><button onclick="alertClick()">alert</button></p>
+        <p><button onclick="promptClick()">prompt</button></p>
+        <p><button onclick="askClick()">ask</button></p>
+        <p><button onclick="checkboxClick()">checkbox</button></p>
+       
+    </body>
+</html>

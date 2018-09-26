@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: darkgrey;
+                color: cornsilk;
+            }
+
+            button {
+                margin: 5px;
+            }
+
+            div.inputContainer {
+                margin: 5px;
+            }
+
+            #header1 {
+                color: rgb(174, 253, 225);
+            }
+
+            #p1 {
+                font-size: 20px;
+                color: rgba(200, 253, 246, 0.623);
+            }
+            
+            #nameInputs {
+                margin-top: 10px;
+                width: 200px;
+                border: 2px solid cornsilk;
+            }
+        </style>
+        <script>
+            function sayHi() {
+                // say hi
+                alert("Hi!");
+            }
+
+            function sayBye() {
+                // say bye
+                alert("Bye!");
+            }
+
+            function promptForName() {
+                // ask the user to input their name
+                var firstName = prompt("What is your first name?");
+                var lastName = prompt("What is your last name?");
+
+                // say hi to the user
+                alert("Hi " + firstName + " "+ lastName + "!");
+            }
+
+            function readFromInput() {
+                // get the input element from the HTML
+                var firstNameInput = document.querySelector("#firstName");
+                // get the value from the input element
+                var firstNameValue = firstNameInput.value;
+                // get the input element from the HTML
+                var lastNameInput = document.querySelector("#lastName");
+                // get the value from the input element
+                var lastNameValue = lastNameInput.value;
+
+                // say hi
+                alert("Hi " + firstNameValue + " "+ lastNameValue + "!");
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="header1">Welcome to my webpage</h1>
+        <p id="p1">It's a good webpage</p>
+        <p>Students say whatever</p>
+        <p>I like sports and I don't care who knows.</p>
+        <h2 id="header2">Here is a list of my favorite sports:</h2>
+        <ol>
+            <li>Basketball</li>
+            <li>Baseball</li>
+            <li>Football</li>
+        </ol>
+        <div>
+            <button onclick="sayHi();">Say Hi</button>
+            <button onclick="sayBye();">Say Bye</button>
+        </div>
+        <div>
+            <button onclick="promptForName();">Say Hi - Prompt</button>
+            
+        </div>
+        <div id="nameInputs">
+            <div class="inputContainer">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+            <button onclick="readFromInput();">Say Hi - Input</button>
+        </div>
+    </body>
+</html>
